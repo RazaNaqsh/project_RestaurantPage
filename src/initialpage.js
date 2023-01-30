@@ -7,12 +7,12 @@ export default function intialLoad() {
 	// header
 	const header = document.createElement("header");
 	header.classList.add("content__header");
+	content.append(header);
 	// header-title
 	const headerTitle = document.createElement("h1");
 	headerTitle.textContent = "Challe Fen Challe";
 	headerTitle.classList.add("header__title");
 	header.append(headerTitle);
-	content.append(header);
 
 	// header-img
 	const mythril = new Image();
@@ -22,6 +22,17 @@ export default function intialLoad() {
 
 	// header-nav
 	const navBar = document.createElement("nav");
+	navBar.classList.add("header__nav");
+	header.append(navBar);
+
+	const ul = document.createElement("ul");
+	navBar.append(ul);
+	const listArray = ["Home", "Menu", "Contact"];
+	for (let i = 0; i < listArray.length; i += 1) {
+		const li = document.createElement("li");
+		li.innerHTML = `<a href="">${listArray[i]}</a>`;
+		ul.append(li);
+	}
 
 	// main
 	const main = document.createElement("main");
