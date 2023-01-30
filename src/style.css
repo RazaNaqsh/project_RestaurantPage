@@ -14,14 +14,36 @@ body {
 .content__header {
 	display: flex;
 	justify-content: center;
-}
-.header__mythril {
-	height: 200px;
+	position: relative;
 }
 .header__title {
 	margin-top: 1.5rem;
 	font-weight: 700;
 	font-family: "Great Vibes", cursive;
-	font-size: 3rem;
+	font-size: 4rem;
 	letter-spacing: 5px;
+}
+.header__mythril {
+	position: absolute;
+	height: 200px;
+	transform: translateX(310px);
+}
+.main {
+	display: flex;
+	align-items: center;
+	gap: 3rem;
+	font-family: "marck script", cursive;
+}
+.main__challe {
+	height: 800px;
+}
+.main__textSection {
+	height: 25rem;
+	padding: 1rem;
+}
+.main__title {
+	font-size: 3rem;
+}
+.main__text {
+	font-size: 1.5rem;
 }
