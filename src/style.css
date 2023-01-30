@@ -65,7 +65,10 @@ li:hover {
 }
 .main__title {
 	font-size: 3rem;
+	color: #a5b4fc;
 }
 .main__text {
+	/* padding-top: 1rem; */
 	font-size: 1.5rem;
+	color: #fda4af;
 }
