@@ -11,9 +11,15 @@ body {
 	color: #86efac;
 	font-family: "Nunito", sans-serif;
 }
-.content__title {
+.content__header {
+	display: flex;
+	justify-content: center;
+}
+.header__mythril {
+	height: 200px;
+}
+.header__title {
 	margin-top: 1.5rem;
-	text-align: center;
 	font-weight: 700;
 	font-family: "Great Vibes", cursive;
 	font-size: 3rem;
