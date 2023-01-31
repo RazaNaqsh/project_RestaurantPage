@@ -1,5 +1,3 @@
-import mythrilImg from "./imgs/Mythril.png";
-
 export default function headerLoader() {
 	const content = document.getElementById("content");
 
@@ -12,12 +10,6 @@ export default function headerLoader() {
 	headerTitle.textContent = "Challe Fen Challe";
 	headerTitle.classList.add("header__title");
 	header.append(headerTitle);
-
-	// header-img
-	const mythril = new Image();
-	mythril.src = mythrilImg;
-	header.append(mythril);
-	mythril.classList.add("header__mythril");
 
 	// header-nav
 	const navBar = document.createElement("nav");

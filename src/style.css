@@ -24,6 +24,17 @@ body {
 	letter-spacing: 5px;
 	position: relative;
 }
+.header__title::after {
+	content: "";
+	position: absolute;
+	top: -20px;
+	margin-left: 5px;
+	background-image: url("./imgs/Mythril.png");
+	background-size: 120px;
+	background-repeat: no-repeat;
+	width: 140px;
+	height: 250px;
+}
 .header__mythril {
 	position: absolute;
 	height: 200px;
