@@ -93,14 +93,33 @@ li:hover {
 	display: flex;
 }
 .menu__textSection {
-	width: 65vw;
+	width: 50vw;
 	display: flex;
 	flex-direction: column;
+	/* margin-left: 4rem; */
+	margin-right: 1rem;
+	margin-left: 15%;
 }
 .menu__textSection__title {
 	margin-top: 5rem;
 	text-align: right;
 	color: #c4b5fd;
+}
+.menu__textMainTitle {
+	font-size: 2rem;
+	padding-top: 1rem;
+}
+.menu__gridContainer {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	min-height: 60vh;
+	/* max-width: 50vw; */
+	/* border: 1px solid #818cf8; */
+	gap: 1rem;
+}
+.gridItem {
+	border: 1px solid #818cf8;
 }
 .menu__hugh {
 	margin-top: 2rem;
