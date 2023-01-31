@@ -1,11 +1,8 @@
 import headerLoader from "./header";
 import challeImg from "./imgs/Challe.png";
-import linkPage from ".";
 
 export default function intialLoad() {
 	headerLoader();
-	linkPage();
-	console.log("initial page");
 
 	const content = document.getElementById("content");
 	// main

@@ -1,10 +1,11 @@
 import initialPage from "./initialpage";
+import "./style.css";
 import menuPage from "./menu";
 import contactPage from "./contact";
-import "./style.css";
 
 initialPage();
-export default function linkPage() {
+
+function linkPage() {
 	const home = document.querySelector(".Home");
 	const menu = document.querySelector(".Menu");
 	const contact = document.querySelector(".Contact");
@@ -21,20 +22,26 @@ export default function linkPage() {
 		e.preventDefault();
 		removeContentElements();
 		initialPage();
+		linkPage();
 	}
 	function loadMenuPage(e) {
 		e.preventDefault();
 		removeContentElements();
 		menuPage();
+		linkPage();
 	}
 	function loadContactPage(e) {
 		e.preventDefault();
 		removeContentElements();
 		contactPage();
+		linkPage();
 	}
 
 	home.addEventListener("click", loadHomePage);
 	menu.addEventListener("click", loadMenuPage);
 	contact.addEventListener("click", loadContactPage);
 }
+
+linkPage();
+
 console.log("Webpack here!");
