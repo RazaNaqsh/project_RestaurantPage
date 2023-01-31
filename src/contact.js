@@ -15,6 +15,11 @@ export default function contactPageLoad() {
 	contactTextSectionLeft.classList.add("contact__textSection--left");
 	contactMain.append(contactTextSectionLeft);
 
+	const leftText = document.createElement("h3");
+	leftText.classList.add("contact__text--left");
+	contactTextSectionLeft.append(leftText);
+	leftText.textContent = "Dont come here ever again, Human!";
+
 	// catt-img
 	const catt = new Image();
 	catt.src = cattImage;
@@ -25,4 +30,12 @@ export default function contactPageLoad() {
 	const contactTextSectionRight = document.createElement("section");
 	contactTextSectionRight.classList.add("contact__textSection--right");
 	contactMain.append(contactTextSectionRight);
+
+	const righText = document.createElement("h3");
+	righText.classList.add("contact__text--right");
+	contactTextSectionRight.append(righText);
+	righText.textContent =
+		"But.. on second thoughts, ..you can, only if Master Challe allows it!";
 }
+
+//  text idea - , dont ever come again human!... but on second thoughts.. you can come if master challe allows it

@@ -15,6 +15,11 @@ export default function menuPageLoad() {
 	menuTextSection.classList.add("menu__textSection");
 	menuMain.append(menuTextSection);
 
+	const menuTextSectionTitle = document.createElement("h2");
+	menuTextSectionTitle.classList.add("menu__textSection__title");
+	menuTextSection.append(menuTextSectionTitle);
+	menuTextSectionTitle.textContent = "What would you like to eat..?";
+
 	//  menu-hugh
 	const hugh = new Image();
 	hugh.src = hughImg;

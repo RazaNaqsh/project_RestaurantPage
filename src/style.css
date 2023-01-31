@@ -9,7 +9,7 @@
 body {
 	background-color: #1e293b;
 	color: #86efac;
-	font-family: "Nunito", sans-serif;
+	font-family: "marck script", cursive;
 }
 
 /* Header section (used by all) */
@@ -94,6 +94,13 @@ li:hover {
 }
 .menu__textSection {
 	width: 65vw;
+	display: flex;
+	flex-direction: column;
+}
+.menu__textSection__title {
+	margin-top: 5rem;
+	text-align: right;
+	color: #c4b5fd;
 }
 .menu__hugh {
 	margin-top: 2rem;
@@ -104,17 +111,24 @@ li:hover {
 .contact__main {
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	margin-top: 2rem;
+	font-size: 2rem;
+	color: #99f6e4;
 }
 
 .contact__textSection--left {
-	width: 30vw;
+	height: 30vh;
+	max-width: 20vw;
+	text-align: right;
 }
 .contact__catt {
-	margin-top: 5rem;
+	margin: 5rem 1rem 0;
 	height: 70vh;
 }
 
 .contact__textSection--right {
-	width: 30vw;
+	height: 30vh;
+	max-width: 20vw;
+	color: #c4b5fd;
 }
