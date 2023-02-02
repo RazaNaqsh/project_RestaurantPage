@@ -10,6 +10,7 @@ body {
 	background-color: #1e293b;
 	color: #86efac;
 	font-family: "marck script", cursive;
+	overflow: hidden;
 }
 
 /* Header section (used by all) */
@@ -25,6 +26,7 @@ body {
 	font-size: 4rem;
 	letter-spacing: 5px;
 	position: relative;
+	animation: slide-down 350ms ease-in-out 1 normal;
 }
 .header__title::after {
 	content: "";
@@ -36,11 +38,20 @@ body {
 	background-repeat: no-repeat;
 	width: 140px;
 	height: 250px;
+	animation: slide-down 350ms ease-in-out 1 normal;
 }
-.header__mythril {
+/* .header__mythril {
 	position: absolute;
 	height: 200px;
 	transform: translate(-100px, 50px);
+} */
+@keyframes slide-down {
+	0% {
+		transform: translateY(-1000px);
+	}
+	100% {
+		transform: translateY(0);
+	}
 }
 .header__nav ul {
 	display: flex;
@@ -53,10 +64,19 @@ body {
 	letter-spacing: 2px;
 	cursor: pointer;
 	transition: all 150ms ease-in-out;
+	animation: slide-left 350ms ease-in-out 1 normal;
 }
 li:hover {
 	transform: scale(1.1);
 	color: #818cf8;
+}
+@keyframes slide-left {
+	0% {
+		transform: translateX(1000px);
+	}
+	100% {
+		transform: translateX(0);
+	}
 }
 .header__nav a {
 	text-decoration: none;
@@ -73,14 +93,40 @@ li:hover {
 .main__challe {
 	height: 800px;
 	margin-left: 3rem;
+	animation: slide-in 350ms ease-in-out 1 normal;
+}
+@keyframes slide-in {
+	0% {
+		opacity: 0;
+		transform: translateX(-1000px);
+	}
+	30% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
 }
 .main__textSection {
 	height: 25rem;
 	padding: 1rem;
+	animation: fade-in 350ms ease-in-out 1 normal;
 }
+
 .main__title {
 	font-size: 3rem;
 	color: #a5b4fc;
+}
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+		visibility: hidden;
+	}
+
+	100% {
+		opacity: 1;
+	}
 }
 .main__text {
 	/* padding-top: 1rem; */
@@ -101,13 +147,15 @@ li:hover {
 	margin-left: 15%;
 }
 .menu__textSection__title {
-	margin-top: 5rem;
+	margin-top: 8rem;
 	text-align: right;
 	color: #c4b5fd;
+	animation: fade-in 350ms ease-in-out 1 normal;
 }
 .menu__textMainTitle {
 	font-size: 2rem;
 	padding-top: 1rem;
+	animation: fade-in 350ms ease-in-out 1 normal;
 }
 .menu__gridContainer {
 	display: grid;
@@ -120,10 +168,20 @@ li:hover {
 }
 .gridItem {
 	border: 1px solid #818cf8;
+	animation: scale-up 350ms ease-in-out 1 normal;
+}
+@keyframes scale-up {
+	0% {
+		transform: scale(0);
+	}
+	100% {
+		transform: scale(1);
+	}
 }
 .menu__hugh {
 	margin-top: 2rem;
 	height: 83vh;
+	animation: slide-left 350ms ease-in-out 1 normal;
 }
 
 /* contact page styling */
@@ -140,14 +198,25 @@ li:hover {
 	height: 30vh;
 	max-width: 20vw;
 	text-align: right;
+	animation: fade-in 350ms ease-in-out 1 normal;
 }
 .contact__catt {
 	margin: 5rem 1rem 0;
 	height: 70vh;
+	animation: slide-up 350ms ease-in-out 1 normal;
+}
+@keyframes slide-up {
+	0% {
+		transform: translateY(1000px);
+	}
+	100% {
+		transform: translateY(0);
+	}
 }
 
 .contact__textSection--right {
 	height: 30vh;
 	max-width: 20vw;
 	color: #c4b5fd;
+	animation: fade-in 350ms ease-in-out 1 normal;
 }
