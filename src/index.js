@@ -43,5 +43,3 @@ function linkPage() {
 }
 
 linkPage();
-
-console.log("Webpack here!");
