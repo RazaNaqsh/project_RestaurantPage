@@ -34,19 +34,19 @@ export default function menuPageLoad() {
 	// grid-items
 	const menuItems = [
 		{
-			name: "item1",
+			name: "Item1",
 			src: "https://media.istockphoto.com/id/1161805849/photo/strawberry-vanilla-chocolate-ice-cream-with-waffle-cone-on-marble-stone-backgrounds.jpg?s=612x612&w=0&k=20&c=BXObHKE0gbA2autsMZGFeEmK2xGKYdJBbM1_ig0Boyk=",
 		},
 		{
-			name: "item2",
+			name: "Item2",
 			src: "https://www.indianhealthyrecipes.com/wp-content/uploads/2022/04/homemade-ice-cream-recipe.jpg",
 		},
 		{
-			name: "item3",
+			name: "Item3",
 			src: "https://www.allrecipes.com/thmb/P59TgUCXtQbv69dHRlZduE38xs8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/453291-five-ingredient-ice-cream-Alberta-Rose-4x3-1-4c9ec10ac4ab4e828615e81aa608dd6b.jpg",
 		},
 		{
-			name: "item4",
+			name: "Item4",
 			src: "https://upload.wikimedia.org/wikipedia/commons/2/2e/Ice_cream_with_whipped_cream%2C_chocolate_syrup%2C_and_a_wafer_%28cropped%29.jpg",
 		},
 	];
